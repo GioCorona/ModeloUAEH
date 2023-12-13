@@ -1,0 +1,901 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ing. Eder Geovanni Ramirez Corona">
+  <title>UAEH-LTI</title>
+
+  <!-- Custom Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300,700' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,600" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap CSS Style -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Template CSS Style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Animate CSS  -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+
+  <!-- FontAwesome 4.3.0 Icons  -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+  <!-- et line font  -->
+  <link rel="stylesheet" href="assets/css/et-line-font/style.css">
+
+  <!-- BXslider CSS  -->
+  <link rel="stylesheet" href="assets/css/bxslider/jquery.bxslider.css">
+
+  <!-- Owl Carousel CSS Style -->
+  <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="assets/css/owl-carousel/owl.transitions.css">
+
+  <!-- Magnific-Popup CSS Style -->
+  <link rel="stylesheet" href="assets/css/magnific-popup/magnific-popup.css">
+	
+
+</head>
+<body>
+
+  <style>
+    .accordion {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .accordion-item {
+      margin-bottom: 1px;
+      border: 1px solid #ddd;
+      overflow: hidden;
+    }
+
+    .accordion-header {
+      background-color: #f1f1f1;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .accordion-content {
+      padding: 10px;
+      display: none;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+
+    .accordion-item.active .accordion-content {
+      display: block;
+      max-height: 2000px;
+    }
+    .imgGarza{
+      height: 100px;
+    }
+  </style>
+  <!-- Preload the Whole Page -->
+  <div id="preloader">      
+    <div id="loading-animation">&nbsp;</div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand" href="#"><img src="assets/images/logo2.png" alt=""></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navigation-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a class="section-scroll" href="#wrapper">Bienvenido</a></li>
+            <li><a href="#UAEH">UAEH</a></li>
+            <li><a href="#Perfil">Perfil</a></li>
+            <li><a href="#Plan">Plan de estudios</a></li>
+            <li><a href="#CampoLaboral">Campo laboral y Perfil</a></li>
+            <li><a href="#ModeloEducativo">Modelo Educativo</a></li>
+            <li><a href="#testimonials-section">Código de ética</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+  </header>
+  <!-- End Navbar -->
+
+  <div id="wrapper">
+
+  <!-- Hero
+  ================================================== -->
+    <section>
+      <div id="hero-section" class="landing-hero" data-stellar-background-ratio="0">
+        <div class="hero-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+
+                <div class="hero-text">
+                  <div class="herolider">
+                    <ul class="caption-slides">
+
+                      <li class="caption">
+                        <h1>Universidad Autónoma del Estado de Hidalgo </h1>
+                        <div class="div-line"></div>
+                        <p class="hero">Modelo educativo, Misión &amp; Visión</p>
+                      </li>
+
+                      <li class="caption">
+                        <h1>Escuela Superior de Tizayuca</h1>
+                        <div class="div-line"></div>
+                        <p class="hero">Código de ética &amp; Propósitos</p>
+                      </li>
+
+                      <li class="caption">
+                        <h1>Licenciatura en tecnologías de la Información</h1>
+                        <div class="div-line"></div>
+                        <p class="hero">Perfil, Campo laboral &amp; Plan de estudio</p>
+                      </li>
+
+                    </ul>
+                  </div> <!-- end herolider -->
+                </div> <!-- end hero-text -->
+
+                <div class="hero-btn">
+                  <a href="#UAEH" class="btn btn-clean">Conoce más</a>
+                </div> <!-- end hero-btn -->
+
+              </div> <!-- end col-md-6 -->
+            </div> <!-- end row -->
+          </div> <!-- End container -->
+        </div> <!-- End hero-content -->
+      </div> <!-- End hero-section -->
+    </section>
+    <!-- End hero section -->
+
+    <!-- Offer
+    ================================================== -->
+    <section>
+      <div id="UAEH" class="pad-sec">
+        <div class="container">
+
+          <div class="title-section big-title-sec animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <h2 class="big-title">Historia</h2>
+                <h1 class="big-subtitle">Breve bosquejo histórico de la UAEH</h1>
+                <hr>
+                <p class="about-text">La Universidad Autónoma del Estado de Hidalgo es la institución de enseñanza más antigua de esta entidad federativa. El plantel nació con el estado; en sus distintas etapas de desarrollo se reflejan las correspondientes épocas de la historia hidalguense.
+
+                  Su primer reglamento interno se expidió en 1872, estuvo inspirado en las ideas de la filosofía positivista y de entonces data el lema "Amor, Orden y Progreso", que hoy identifica a la Universidad hidalguense. En 1875 la escuela, que funcionaba en una casa alquilada en la calle de Allende, se trasladó al edificio del que fuera hospital de San Juan de Dios, fundado al poniente de Pachuca en 1725 y abandonado por los Juaninos en 1836, que hoy es el Edificio Central de la calle de Abasolo.   
+                  
+                  
+                  Durante el gobierno del licenciado Adolfo López Mateos se fueron creando universidades en varios estados de la república. En Hidalgo, la población estudiantil que demandaba educación superior iba en aumento, así que las circunstancias fueron propicias para que, el 24 de febrero de 1961, la XLIII Legislatura Local promulgara el decreto número 23 que creaba la actual Universidad Autónoma del Estado de Hidalgo.  
+                  
+                  La Universidad ha vivido múltiples e importantes cambios caracterizados por un rápido crecimiento y expansión de cada una de sus funciones sustantivas.</p>
+              </div>
+            </div> <!-- End row -->
+          </div> <!-- end title-section -->
+
+          <div class="offer-boxes">
+
+            <div class="row">
+            <div class="col-sm-4">
+              <div class="offer-post text-center animated out" data-animation="fadeInLeft" data-delay="0">
+                <div class="offer-icon">
+                  <span class="icon-desktop"></span>
+                </div>
+                <h4>Misión</h4>
+                <p>Formar capital humano de alta calidad, de acuerdo con las necesidades de la sociedad global, propiciando la incorporación exitosa de sus egresados al trabajo productivo en el ámbito de su competencia; generar investigación de alta competitividad en beneficio de la sociedad, contribuyendo a la solución de problemas estructurales relacionados con la sostenibilidad y desarrollo de los sectores social, productivo y público; crear, preservar y difundir la cultura en beneficio de todos los sectores de la población, fomentando la solidaridad social y la preservación del patrimonio multicultural, étnico y natural; articular las funciones sustantivas de la universidad con el entorno mundial; fomentar la legalidad, transparencia y protección de los derechos humanos; planear, operar y gestionar en el ámbito académico y administrativo bajo el proceso permanente de la evaluación.</p>
+              </div> <!-- End offer-post -->
+            </div> <!-- End col-sm-4 -->
+
+            <div class="col-sm-4">
+              <div class="offer-post text-center animated out" data-animation="fadeInUp" data-delay="0">
+                <div class="offer-icon">
+                  <span class="icon-presentation"></span>
+                </div>
+                <h4>Visión</h4>
+                <p>Un aspecto que la institución ha consolidado desde hace más de tres décadas, es el trabajo basado en la planeación estratégica y el respeto irrestricto a la normatividad. El sustento de la Universidad tiene su origen en el Proyecto Integral de Transformación Académica, PITA, cuyos objetivos centrales son:
+
+                  • La formación integral de los estudiantes;
+                  
+                  • La actualización disciplinar y la formación pedagógica del personal docente;
+                  
+                  • La actualización permanente de las currículas;
+                  
+                  • El impulso a los programas de posgrado y de investigación;
+                  
+                  • El mejoramiento y ampliación de la infraestructura académica; y,
+                  
+                  • La readecuación de la organización académico-administrativa;</p>
+              </div> <!-- End offer-post -->
+            </div> <!-- End col-sm-4 -->
+
+            <div class="col-sm-4">
+              <div class="offer-post text-center animated out" data-animation="fadeInRight" data-delay="0">
+                <div class="offer-icon">
+                  <span class="icon-lifesaver"></span>
+                </div>
+                <h4>Símbolos Universitarios</h4>
+                <p>El Edificio Central de la UAEH: Una de las Instituciones de mayor importancia en el Estado de Hidalgo y en particular de la ciudad de Pachuca es, sin duda alguna, la Universidad Autónoma del Estado de Hidalgo. No obstante que la actual universidad se diversifica en distintos campus, el Edificio Central, ubicado en la céntrica calle de Abasolo</p>
+                <p>El Escudo:El escudo está formado por 3 secciones o cuarteles alineados de forma vertical y enmarcados.</p>
+                <p>La Garza: La imagen de la Garza, que se ha convertido en un símbolo que identifica a la Universidad Autónoma del Estado de Hidalgo, fue tomada de la figura fundida en bronce que hasta nuestros días adorna la fuente del patio del Edificio Central. </p>
+                <p>
+                  El lema "Amor, Orden y Progreso":El lema que ha estado vigente en nuestra institución desde su fundación, puede haber dejado de ser válido sobre todo en la época actual, lo importante es saber que su interpretación siempre estará sujeta a la identificación que como universitarios tenemos con nuestra institución</p>
+              </div> <!-- End offer-post -->
+            </div> <!-- End col-sm-4 -->
+
+            </div> <!-- End row -->
+
+          </div> <!-- End offer-boxes -->
+        </div> <!-- End container -->
+      </div> <!-- End landing-offer-section -->
+    </section>
+    <!-- End offer section -->
+
+    <section>
+      <div class="sep-section"></div>
+    </section>
+
+    <!-- Features services
+    ================================================== -->
+    <section>
+      <div id="Perfil" class="pad-sec">
+        <div class="container">
+          <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2>Licenciado en tecnologías de la Información</h2>
+                <hr>
+                <p>El Licenciado en Tecnologías de la Información es un profesionista dedicado a resolver, mantener, solucionar problemas y diseñar, desde sitios web hasta redes y aplicaciones móviles, en organizaciones públicas y privadas. Son expertos en la aplicación de soporte tanto en la infraestructura tecnológica de una organización como en las personas que hacen uso de la misma. Son responsables de la elección de los productos hardware y software apropiados para cada organización, además de crear y gestionan sitios web y redes para proporcionar un entorno seguro, eficiente y productivo empleando bases de datos para el almacenamiento de la información.</p>
+              </div> <!-- edn col-sm-8 -->
+            </div> <!-- End row -->
+          </div> <!-- end title-section -->
+          <div class="row">
+            <div class="col-md-3 without-padding">
+              <div class="left-features-services">
+                <ul class="features-list">
+                  <!-- feature -->
+                  <li>
+                    <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
+                      <span class="iconbox"><i class="icon-mobile"></i></span>
+                      <div class="features-box-content">
+                        <h6>Aplicaciones Móviles</h6>
+                        <p>Desarrollo móvil en android, Ios y aplicaciones hibridas</p>
+                      </div> <!-- end features-box-content -->
+                    </div> <!-- end left-features-box -->
+                  </li>
+                  <!-- feature -->
+                  <li>
+                    <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
+                      <span class="iconbox"><i class="icon-browser"></i></span>
+                      <div class="features-box-content">
+                        <h6>Diseño de páginas Web</h6>
+                        <p>Diseño de páginas web empresariales utilizando herramientas actuales.</p>
+                      </div> <!-- end features-box-content -->
+                    </div> <!-- end left-features-box -->
+                  </li>
+                  <!-- feature -->
+                  <li>
+                    <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
+                      <span class="iconbox"><i class="icon-tools-2"></i></span>
+                      <div class="features-box-content">
+                        <h6>Soporte</h6>
+                        <p>Soporte tanto en la infraestructura tecnológica de una organización como en las personas que hacen uso de la misma.</p>
+                      </div> <!-- end features-box-content -->
+                    </div> <!-- end left-features-box -->
+                  </li>
+                  <!-- feature -->
+                  <li>
+                    <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
+                      <span class="iconbox"><i class="icon-lock"></i></span>
+                      <div class="features-box-content">
+                        <h6>Seguridad</h6>
+                        <p>Implementación de los más altos protocolos de seguridad para resguardo de la información.</p>
+                      </div> <!-- end features-box-content -->
+                    </div> <!-- end left-features-box -->
+                  </li>
+                  <!-- feature -->
+                  <li>
+                    <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
+                      <span class="iconbox"><i class="icon-lightbulb"></i></span>
+                      <div class="features-box-content">
+                        <h6>Desarrollo web</h6>
+                        <p>Desarrollo de aplicaciones web robustas para uso tecnológico.</p>
+                      </div> <!-- end features-box-content -->
+                    </div> <!-- end left-features-box -->
+                  </li>
+                </ul> <!-- end features-list -->
+              </div> <!-- end left-features-service -->
+            </div><!--  end col-md-3 -->
+
+            <div class="col-md-6">
+              <div class="features-image animated out" data-animation="fadeInUp" data-delay="0">
+                <img src="assets/images/temp/woman.jpg" alt="">
+              </div> <!-- end features-image -->
+            </div> <!-- end col-md-6 -->
+
+            <div class="col-md-3 without-padding">
+              <div class="right-features-services">
+                <ul class="features-list">
+                  <!-- feature -->
+                  <li>
+                    <div class="right-features-box animated out" data-animation="fadeInRight" data-delay="0">
+                      <span class="iconbox"><i class="icon-strategy"></i></span>
+                      <div class="features-box-content">
+                        <h6>Inovación</h6>
+                        <p>Proporcionar soluciones tecnológicas inovadoras para problemas empresariales.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- feature -->
+                  <li>
+                    <div class="right-features-box animated out" data-animation="fadeInRight" data-delay="0">
+                      <span class="iconbox"><i class="icon-laptop"></i></span>
+                      <div class="features-box-content">
+                        <h6>Redes</h6>
+                        <p>Implementación de protocolos redes empresariales.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- feature -->
+                  <li>
+                    <div class="right-features-box animated out" data-animation="fadeInRight" data-delay="0">
+                      <span class="iconbox"><i class="icon-mobile"></i></span>
+                      <div class="features-box-content">
+                        <h6>Infraestructura</h6>
+                        <p>Son responsables de la elección de los productos hardware y software apropiados para cada organización.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- feature -->
+                  <li>
+                    <div class="right-features-box animated out" data-animation="fadeInRight" data-delay="0">
+                      <span class="iconbox"><i class="icon-piechart"></i></span>
+                      <div class="features-box-content">
+                        <h6>Base de datos</h6>
+                        <p>Expertos en Diseño e implemetación de bases de datos .</p>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- feature -->
+                  <li>
+                    <div class="right-features-box animated out" data-animation="fadeInRight" data-delay="0">
+                      <span class="iconbox"><i class="fa fa-life-ring"></i></span>
+                      <div class="features-box-content">
+                        <h6>Integridad</h6>
+                        <p>Mantenimiento y Reespaldo de datos asegurando la integridad de la información.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul> <!-- end features-list -->
+              </div>
+            </div> <!-- end col-md-3 -->
+
+          </div> <!-- end row -->
+        </div> <!-- end container -->
+      </div>
+    </section>
+    <!-- End features-section -->
+
+    <!-- Video section
+    ================================================== -->
+    <section>
+      <div id="video-section" data-stellar-background-ratio="0">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="video-section-content text-center">
+                <a href="https://www.youtube.com/watch?v=vpVpZUF5xC8" class="video-pop-up"><i class="fa fa-play"></i></a>
+                <div class="video-head">Conoce más</div>
+                <div class="video-sub-heading">Checa nuestro video de presentación</div>
+              </div>
+            </div> <!-- end col-sm-6 -->
+          </div> <!-- end row -->
+        </div> <!-- end container -->
+      </div>
+    </section>
+    <!-- End Video section -->
+
+    <!-- Team
+    ================================================== -->
+    <section>
+      <div id="Plan" class="pad-sec">
+        <div class="container">
+          <div class="title-section animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2>Plan de estudios</h2>
+                <hr>
+                <div class="accordion">
+                  <!-- Repite este bloque para cada semestre -->
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion-header">1º semestre</div>
+                    <div class="accordion-content">
+                      <p>• Introducción a las Tecnologías de la Información</p>
+                      <p>• Aprender a Aprender</p>
+                      <p>• Fundamentos de Programación</p>
+                      <p>• Fundamentos de Redes</p>
+                      <p>• Desarrollo Sustentable y Medio Ambiente</p>
+                      <p>• Conversaciones Introductorias. Lengua Extranjera</p>
+                    </div>
+                  </div>
+                  <!-- Fin del bloque -->
+                
+                  <!-- Repite este bloque para cada semestre -->
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion-header">2º semestre</div>
+                    <div class="accordion-content">
+                      <p>• Precálculo</p>
+                      <p>• Probabilidad y Estadística</p>
+                      <p>• Programación Estructurada Avanzada</p>
+                      <p>• Seguridad en Redes de Información</p>
+                      <p>• Electricidad y Magnetismo</p>
+                      <p>• Eventos Pasados y Futuros. Lengua Extranjera</p>
+                    </div>
+                  </div>
+                  <!-- Fin del bloque -->
+
+                  <!-- Repite este bloque para cada semestre -->
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion-header">3º semestre</div>
+                    <div class="accordion-content">
+                      <p>• Cálculo Diferencial e Integral</p>
+                      <p>• Álgebra Lineal</p>
+                      <p>• Programación Orientada a Objetos</p>
+                      <p>• Diseño de Bases de Datos</p>
+                      <p>• Sistemas Electrónicos I</p>
+                      <p>• Logros y Experiencias. Lengua Extranjera</p>
+                    </div>
+                  </div>
+                  <!-- Fin del bloque -->
+
+                  <!-- Repite este bloque para cada semestre -->
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion-header">4º semestre</div>
+                    <div class="accordion-content">
+                      <p>• Matemáticas Discretas</p>
+                      <p>• Modelado en UML</p>
+                      <p>• Estructura de Datos</p>
+                      <p>• Administración de Bases de Datos</p>
+                      <p>• Sistemas Electrónicos II</p>
+                      <p>• Decisiones Personales. Lengua Extranjera</p>
+                    </div>
+                  </div>
+                  <!-- Fin del bloque -->
+
+                  <!-- Repite este bloque para cada semestre -->
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion-header">5º semestre</div>
+                    <div class="accordion-content">
+                      <p>• Métodos Numéricos</p>
+                      <p>• Análisis y Diseño de Sistemas</p>
+                      <p>• Desarrollo de Aplicaciones Web I</p>
+                      <p>• Desarrollo de Aplicaciones Móviles</p>
+                      <p>• Arquitectura de Computadoras</p>
+                      <p>• Causa y Efecto. Lengua Extranjera</p>
+                    </div>
+                  </div>
+                  <!-- Fin del bloque -->
+
+                  <!-- Repite este bloque para cada semestre -->
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion-header">6º semestre</div>
+                    <div class="accordion-content">
+                      <p>• Administración de las TI</p>
+                      <p>• Ingeniería de Software</p>
+                      <p>• Desarrollo de Aplicaciones Web II</p>
+                      <p>• Fundamentos de Metodología de la Investigación</p>
+                      <p>• Optativa I Software Testing</p>
+                      <p>• En Otras Palabras…Lengua Extranjera</p>
+                    </div>
+                  </div>
+                  <!-- Fin del bloque -->
+
+                  <!-- Repite este bloque para cada semestre -->
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion-header">7º semestre</div>
+                    <div class="accordion-content">
+                      <p>• Lenguajes y Autómatas</p>
+                      <p>• Internet de las Cosas</p>
+                      <p>• Sistemas Operativos</p>
+                      <p>• Administración de Proyectos para las TI</p>
+                      <p>• Optativa II PWA</p>
+                      <p>• Preparación para Certificación en Lengua Extranjera</p>
+                    </div>
+                  </div>
+                  <!-- Fin del bloque -->
+
+                  <!-- Repite este bloque para cada semestre -->
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion-header">8º semestre</div>
+                    <div class="accordion-content">
+                      <p>• Cómputo en la Nube</p>
+                      <p>• México Multicultural</p>
+                      <p>• Servicio Social</p>
+                      <p>• Evaluación de Proyectos para TI</p>
+                      <p>• Optativa III RIA</p>
+                      <p>• Minería de Datos</p>
+                    </div>
+                  </div>
+                  <!-- Fin del bloque -->
+
+                  <!-- Repite este bloque para cada semestre -->
+                  <div class="accordion-item" onclick="toggleAccordion(this)">
+                    <div class="accordion-header">9º semestre</div>
+                    <div class="accordion-content">
+                      <p>• Prácticas Profesionales</p>
+                      <p>• Proyecto Terminal</p>
+                      <p>• Algoritmos Avanzados</p>
+                      <p>• Interacción Humano-Computadora</p>
+                    </div>
+                  </div>
+                  <!-- Fin del bloque -->               
+                <hr>
+                <p>El plan de estudios esta encaminado a formar un profesionista con una gama enorme de herramientas para dar solución a problemas tecnológicos.</p>
+                <br><br>
+              </div>
+            </div> <!-- End row -->
+          </div> <!-- end title-section -->
+
+          
+    <!-- Banner-Services
+    ================================================== -->
+    <section>
+      <div id="banner-services" data-stellar-background-ratio="0">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-6">
+              <div class="banner-content animated out" data-animation="fadeInUp" data-delay="0">
+                <h3 class="banner-heading">Contamos con diversos servicios escolares</h3>
+                <div class="banner-decription">
+                  Encaminados al apoyo del desarrollo profesional dentro y fuera del plantel.
+                </div> <!-- end banner-decription -->
+                <div>
+                  <a href="https://www.uaeh.edu.mx/campus/tizayuca/licenciatura/tecnologias-informacion/" class="btn btn-sm btn-clean">Aprende más</a>
+                </div>
+              </div> <!-- end banner-content -->
+            </div> <!-- end col-sm-6 -->
+
+            <div class="col-sm-6">
+              <div class="banner-image animated out" data-animation="fadeInUp" data-delay="0">
+                <img src="assets/images/temp/banner-img.png" alt="">
+              </div> <!-- end banner-image -->
+            </div> <!-- end col-sm-6 -->
+            
+          </div> <!-- end row -->
+        </div> <!-- end container -->
+      </div>
+    </section>
+    <!-- End Banner services section -->
+
+    <!-- Screenshots
+    ================================================== -->
+    
+      <section>
+        <div id="CampoLaboral" class="pad-sec">
+          <div class="container">
+           <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <h2>Campo Laboral</h2>
+                  <hr>
+                  <p>El egresado de la Licenciatura en Tecnologías de la Información puede laborar en diversos ambitos relacionados con la aplicación de tecnologías y desarrollo de soluciones empresariales:</p>
+              </div>
+            </div> <!-- End row -->
+          </div> <!-- end title-section -->
+          <div class="team-members">
+            <div class="row">
+
+              <!-- member-team -->
+              <div class="col-sm-4">
+                <div class="member-team animated out" data-animation="fadeInLeft" data-delay="0">
+                  <img src="assets/images/team/m1.jpg" alt="">
+                  <div class="magnifier">
+                    <div class="magnifier-inner">
+                      <h3>Campo laboral y Perfil</h3>
+                      <p>En organizaciones que ofrecen servicio de almacenamiento y administración de bases de datos.
+                        En áreas de soporte y administración de recursos informáticos.
+                        En áreas de informática, sistemas y redes de cualquier organización pública o privada.
+                        Desarrollando software para cualquier organización pública, privada o como freelance.</p>
+                    </div> <!-- End magnifier-inner -->
+                  </div> <!-- End magnifier -->
+                </div> <!-- End member-team -->
+              </div> <!-- End col-sm-4 -->
+
+              <!-- member-team -->
+              <div class="col-sm-4">
+                <div class="member-team animated out" data-animation="fadeInUp" data-delay="0">
+                  <img src="assets/images/team/m2.jpg" alt="">
+                  <div class="magnifier">
+                    <div class="magnifier-inner">
+                      <h3>Perfil de Ingreso</h3>
+                      <p>Conocimientos básicos de Inglés, matemáticas y uso de herramientas ofimáticas.
+                        Habilidades para el planteamiento y resolución de problemas, el uso de herramientas computacionales, el pensamiento analítico y la toma de decisiones.
+                        Actitudes para el trabajo en equipo, el interés por la investigación, el cuidado del medio ambiente, la actualización permanente y propositivo.
+                        Valores como responsabilidad, respeto, honestidad y preocupación por el medio ambiente.</p>
+                    </div> <!-- End magnifier-inner -->
+                  </div> <!-- End magnifier -->
+                </div> <!-- End member-team -->
+              </div> <!-- End col-sm-4 -->
+
+              <!-- member-team -->
+              <div class="col-sm-4">
+                <div class="member-team animated out" data-animation="fadeInRight" data-delay="0">
+                  <img src="assets/images/team/m3.jpg" alt="">
+                  <div class="magnifier">
+                    <div class="magnifier-inner">
+                      <h3>Perfil de Egreso</h3>
+                      <p>Formar profesionistas competitivos en el análisis, diseño y desarrollo de sistemas informáticos complejos, empleando tecnologías de la información vanguardistas, que le permite dar solución a problemas del área de manera efectiva cumpliendo estándares de calidad. Desarrolla y evalúa proyectos sustentables, que contribuyan en el crecimiento económico y social del país, conocimientos y habilidades como: la creación de aplicaciones.
+                      </p>
+                    </div> <!-- End magnifier-inner -->
+                  </div> <!-- End magnifier -->
+                </div> <!-- End member-team -->
+              </div> <!-- End col-sm-4 -->
+
+            </div>
+          </div> <!-- End team-members -->
+        </div> <!-- End container -->
+      </div> <!-- End team-section -->
+    </section>
+    <!-- Prices
+    ================================================== -->
+    <section>
+      <div id="ModeloEducativo" class="pad-sec">
+        <div class="container">
+          <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <h2>Modelo Educativo</h2>
+                <hr>
+                <p>¿Qué es el Modelo Educativo de la UAEH? Un estado de referencia permanente sobre el cual se articulan los procesos sustantivos y adjetivos de la Universidad. Ante todo una norma indicativa de la institución.</p>
+                <p>El Modelo Educativo Universitario resume el Ser y Quehacer de nuestra institución, por ello, además de ser una norma aprobada por el Consejo Universitario, es fuente de múltiples referencias para comprender mejor los fines de la UAEH. Un constructo dinámico que se expresa en seis DIMENSIONES interrelacionadas:
+                </p>
+                <p></p>
+              </div>
+            </div> <!-- End row -->
+          </div> <!-- end title-section -->
+
+          <div class="row">
+            <div class="col-sm-4">
+              <ul class="price-table animated out" data-animation="fadeInLeft" data-delay="0">
+                  <li class="title-price">
+                    <h3>DIMENSIÓN FILÓSOFICA</h3>
+                  </li>
+                  <p>Reúne el ideario de la institución, sus valores y deberes, así como el entorno ético que
+                    sirve de marco a la deontología de los integrantes de su comunidad.</p>
+              </ul>
+            </div> <!-- end col-sm-4 -->
+
+            <div class="col-sm-4">
+              <ul class="price-table animated out" data-animation="fadeInRight" data-delay="0">
+                <li class="title-price">
+                  <h3>DIMENSIÓN JURÍDICA:</h3>
+                </li>
+                <p>Enuncia el conjunto de normas y finalidades del orden normativo sobre el cual se
+                  sustenta la cultura de la legalidad en la institución con el cumplimiento irrestricto de la
+                  normatividad.</p>
+            </ul>
+            </div> <!-- end col-sm-4 -->
+
+            <div class="col-sm-4">
+              <ul class="price-table animated out" data-animation="fadeInRight" data-delay="0">
+                  <li class="title-price">
+                    <h3>DIMENSIÓN SOCIOLÓGICA:</h3>
+                  </li>
+                  <p>Se vincula con la educación porque ésta es un hecho social. El ideal de hombre
+                    constituye el polo de la educación. Para la sociedad la educación es el medio a través del
+                    cual se prepara a los hombres y mujeres a las condiciones esenciales de su propia
+                    existencia.
+                    </p>
+              </ul>
+            </div> <!-- end col-sm-4 -->
+          </div> <!-- end row -->
+          <div class="container">
+            <div class="col-sm-4">
+              <ul class="price-table animated out" data-animation="fadeInUp" data-delay="0">
+                <li class="title-price">
+                  <h3>DIMENSIÓN PEDAGÓGICA:</h3>
+                </li>
+                <p>Abarca las referencias de orden filosófico y de orden técnico sobre la forma como la
+                  institución integra y rige la currícula de los diversos tipos, niveles y modalidades que dan
+                  origen a sus programas educativos, rasgos de los estudiantes y el papel de los docentes
+                  en el proceso de formar, así como las características de los escenarios para educar: reales,
+                  virtuales y áulicos.</p>
+            </ul>
+            </div> <!-- end col-sm-4 -->
+
+            <div class="col-sm-4">
+              <ul class="price-table animated out" data-animation="fadeInRight" data-delay="0">
+                  <li class="title-price">
+                    <h3>DIMENSIÓN POLÍTICA:</h3>
+                  </li>
+                  <p>Se refiere a la capacidad de la institución para dirigirse a sí misma; a la facultad para
+                    decidir cuáles escenarios quiere alcanzar en lo futuro; la manera en cómo se dirigen las
+                    acciones del presente, de que planes, programas y acciones se vale; la orientación que da
+                    a las decisiones que esto conlleva, para que conformen las líneas generales del
+                    comportamiento institucional.</p>
+              </ul>
+            </div> <!-- end col-sm-4 -->
+
+            <div class="col-sm-4">
+              <ul class="price-table animated out" data-animation="fadeInRight" data-delay="0">
+                  <li class="title-price">
+                    <h3>DIMENSIÓN OPERATIVA:</h3>
+                  </li>
+                  <p>Plantea las condiciones institucionales que deben crearse para sintetizar y orientar el
+                    esfuerzo de la universidad, en torno a la transición de la realidad hacia un estado de
+                    pleno desarrollo, en tanto que la búsqueda de los escenarios del futuro deseado, será
+                    guiada por la Misión y hacia la Visión, guiados por el Modelo Educativo.
+                    </p>
+              </ul>
+            </div> <!-- end col-sm-4 -->
+          </div>
+        </div> <!-- end container -->
+      </div>
+    </section>
+    <!-- End prices section -->
+      <!-- Testimonial
+      ================================================== -->      
+      <section>
+        <div id="testimonials-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                <h2>Código de ética</h2>
+                <div class="testimonials-carousel">
+
+                  <ul class="testimonials-slider">
+                    
+                    <!-- Testimonial -->
+                    <li>
+                      <img src="assets/images/temp/garza.png" alt="garza" class="imgGarza">
+                      <p>1.1. El Código de Ética e Integridad Académica
+                        prescribe las normas que contienen los valores
+                        y los principios que fundamentan el liderazgo
+                        ético y la integridad académica a partir de un
+                        sentido de responsabilidad ante la sociedad
+                        nacional y global, así como ante la comunidad
+                        universitaria internacional. </p>
+                      <div class="testimonials-author"><a href="https://www.uaeh.edu.mx/defensor_univ/doc/2020/codigo-de-etica-e-integridad-academica-del-personal-y-el-alumnado.pdf"> UAEH - Código de Ética e Integridad Académica </a></div>
+                    </li>
+                    
+                    <!-- Testimonial -->
+                    <li>
+                      <img src="assets/images/temp/garza.png" alt="garza" class="imgGarza">
+                      <p>1.2. Las autoridades universitarias y el funcionariado con mando directivo están obligados a
+                        ser ejemplo de cumplimiento del Código. </p>
+                        <div class="testimonials-author"><a href="https://www.uaeh.edu.mx/defensor_univ/doc/2020/codigo-de-etica-e-integridad-academica-del-personal-y-el-alumnado.pdf"> UAEH - Código de Ética e Integridad Académica </a></div>
+                    </li>
+                    
+                    <!-- Testimonial -->
+                    <li>
+                      <img src="assets/images/temp/garza.png" alt="garza" class="imgGarza">
+                      <p>1.3. El liderazgo ético y la integridad académica
+                        son la base del prestigio global de la Universidad.</p>
+                        <div class="testimonials-author"><a href="https://www.uaeh.edu.mx/defensor_univ/doc/2020/codigo-de-etica-e-integridad-academica-del-personal-y-el-alumnado.pdf"> UAEH - Código de Ética e Integridad Académica </a></div>
+                    </li>
+
+                    <!-- Testimonial -->
+                    <li>
+                      <img src="assets/images/temp/garza.png" alt="garza" class="imgGarza">
+                      <p>2.1. El Código de Ética e Integridad Académica
+                        es de observancia obligatoria para la comunidad universitaria.
+                        Para efectos de este Código, la comunidad
+                        universitaria comprende al personal, alumnado, funcionariado, autoridades universitarias,
+                        miembros del patronato, patrocinadores, benefactores, proveedores y egresados. </p>
+                        <div class="testimonials-author"><a href="https://www.uaeh.edu.mx/defensor_univ/doc/2020/codigo-de-etica-e-integridad-academica-del-personal-y-el-alumnado.pdf"> UAEH - Código de Ética e Integridad Académica </a></div>
+                    </li>
+
+                    <!-- Testimonial -->
+                    <li>
+                      <img src="assets/images/temp/garza.png" alt="garza" class="imgGarza">
+                      <p>2.2. El Código es obligatorio para las personas
+                        prestatarias de servicio social, las que ejecuten
+                        prácticas profesionales, las que presten servicios profesionales o independientes a la Universidad, así como las instituciones, proveedores y
+                        patrocinadores con los que la Universidad se vincule o con los que celebre contratos o convenios</p>
+                        <div class="testimonials-author"><a href="https://www.uaeh.edu.mx/defensor_univ/doc/2020/codigo-de-etica-e-integridad-academica-del-personal-y-el-alumnado.pdf"> UAEH - Código de Ética e Integridad Académica </a></div>
+                    </li>
+
+                    <!-- Testimonial -->
+                    <li>
+                      <img src="assets/images/temp/garza.png" alt="garza" class="imgGarza">
+                      <p>3.1. Son valores universales para el cumplimiento de la misión institucional, la dignidad
+                        humana, la libertad, la igualdad de los géneros,
+                        la igualdad real, la diversidad, la pluralidad, la
+                        solidaridad y el compromiso. </p>
+                        <div class="testimonials-author"><a href="https://www.uaeh.edu.mx/defensor_univ/doc/2020/codigo-de-etica-e-integridad-academica-del-personal-y-el-alumnado.pdf"> UAEH - Código de Ética e Integridad Académica </a></div>
+                    </li>
+
+                    <!-- Testimonial -->
+                    <li>
+                      <img src="assets/images/temp/garza.png" alt="garza" class="imgGarza">
+                      <p>3.2. Son valores institucionales el respeto,
+                        la honestidad, la transparencia, la lealtad y
+                        la responsabilidad.</p>
+                        <div class="testimonials-author"><a href="https://www.uaeh.edu.mx/defensor_univ/doc/2020/codigo-de-etica-e-integridad-academica-del-personal-y-el-alumnado.pdf"> UAEH - Código de Ética e Integridad Académica </a></div>
+                    </li>
+
+                  </ul>
+
+                  <div class="tc-arrows">
+                     <div class="tc-arrow-left"></div>
+                     <div class="tc-arrow-right"></div>
+                  </div> <!-- end tc-arrows -->
+                </div> <!-- end testimonials-carousel -->
+
+              </div> <!-- end col-md-8 -->
+            </div> <!-- end row -->
+          </div> <!-- end container -->
+        </div>
+      </section>
+      <!-- end testimonial section -->
+
+    <!-- Footer
+    ================================================== -->
+    <footer>
+      <div id="footer-section" class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <p class="copyright">
+                <p>Licenciatura en tecnologias de la información</p>
+                &copy; 2024 UAEH - EsTi
+              </p>
+            </div> <!-- End col-sm-8 -->
+          </div> <!-- End row -->
+        </div> <!-- End container -->
+      </div> <!-- End footer-section  -->
+    </footer>
+    <!-- End footer -->
+
+  </div> <!-- End wrapper -->
+
+  <!-- Back-to-top
+  ================================================== -->
+  <div class="back-to-top">
+    <i class="fa fa-angle-up fa-3x"></i>
+  </div> <!-- end back-to-top -->
+
+  <script>
+    function toggleAccordion(accordionItem) {
+      accordionItem.classList.toggle('active');
+    }
+  </script>
+  <!-- JS libraries and scripts -->
+  <script src="assets/js/jquery-1.11.3.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+  <script src="assets/js/jquery.appear.min.js"></script>
+  <script src="assets/js/jquery.bxslider.min.js"></script>
+  <script src="assets/js/jquery.owl.carousel.min.js"></script>
+  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/jquery.imagesloaded.min.js"></script>
+  <script src="assets/js/jquery.isotope.js"></script>
+  <script src="assets/js/jquery.placeholder.js"></script>
+  <script src="assets/js/jquery.smoothscroll.js"></script>
+  <script src="assets/js/jquery.stellar.min.js"></script>
+  <script src="assets/js/jquery.waypoints.js"></script>
+  <script src="assets/js/jquery.fitvids.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+  <script src="assets/js/jquery.countdown.js"></script>
+  <script src="assets/js/jquery.navbar-scroll.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="assets/js/jquery.gmaps.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
